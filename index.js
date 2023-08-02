@@ -8,57 +8,45 @@ function toggleMenu() {
   }
 }
 
-
-
-// const mobileMenu = document.getElementById('mobile-menu');
-// function toggleMenu() {
-//   mobileMenu.addEventListener('click',toggleMenu);
-//   if (mobileMenu.style.display === 'block') {
-//     mobileMenu.style.display = 'none';
-//   } else {
-//     mobileMenu.style.display = 'block';
-//   }
-// }
-
-
 // Array of objects representing featured speakers///////////////////
 const featuredSpeakers = [
   {
-    imageSrc: "../images/speaker 1.png",
-    name: "Yochai Benkler",
-    title: "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
-    description: "Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006",
+    imageSrc: '../images/speaker 1.png',
+    name: 'Yochai Benkler',
+    title: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+    description: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
   },
   {
-    imageSrc: "../images/speaker 2.png",
-    name: "SohYeong Noh",
-    title: "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
-    description: "Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006",
+    imageSrc: '../images/speaker 2.png',
+    name: 'Yochai Benkler',
+    title: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+    description: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
   },
   {
-    imageSrc: "../images/speaker 1.png",
-    name: "SohYeong Noh",
-    title: "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
-    description: "Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006",
+    imageSrc: '../images/speaker 2.png',
+    name: 'Yochai Benkler',
+    title: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+    description: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
   },
   {
-    imageSrc: "../images/speaker 2.png",
-    name: "SohYeong Noh",
-    title: "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
-    description: "Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006",
+    imageSrc: '../images/speaker 1.png',
+    name: 'Yochai Benkler',
+    title: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+    description: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
   },
   {
-    imageSrc: "../images/speaker 1.png",
-    name: "SohYeong Noh",
-    title: "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
-    description: "Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006",
+    imageSrc: '../images/speaker 2.png',
+    name: 'Yochai Benkler',
+    title: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+    description: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
   },
   {
-    imageSrc: "../images/speaker 2.png",
-    name: "SohYeong Noh",
-    title: "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
-    description: "Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006",
+    imageSrc: '../images/speaker 2.png',
+    name: 'Yochai Benkler',
+    title: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+    description: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
   },
+
 ];
 
 let speakersToShow = 2; // Initial number of speakers to display
@@ -67,7 +55,7 @@ function createFeaturedSpeakers() {
   const featureWrapper = document.getElementById('feature-wrapper');
   featureWrapper.innerHTML = ''; // Clear the existing content
 
-  for (let i = 0; i < speakersToShow; i++) {
+  for (let i = 0; i < speakersToShow; i+=1) {
     const speaker = featuredSpeakers[i];
 
     // Create the HTML elements for each speaker
@@ -117,7 +105,6 @@ function showMoreSpeakers() {
 // i need to Call the function to create featured speakers on page load
 document.addEventListener('DOMContentLoaded', createFeaturedSpeakers);
 
-// i need to add the clcik event  Add click event listener to the "More" button to show more speakers
+// i need to to make eventListener to the button
 const seeMoreBtn = document.querySelector('.see-moreBtn');
 seeMoreBtn.addEventListener('click', showMoreSpeakers);
-
