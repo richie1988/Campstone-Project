@@ -21,7 +21,6 @@
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
-  - [Design Credit:](#design-credit)
   - [Creative Commons License:](#creative-commons-license)
   - [Attribution:](#attribution)
   - [📝 License ](#-license-)
@@ -145,7 +144,7 @@ I would like Thank Microverse Team and my Collabaration partners whom they have 
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]([https://docs.github.com/en/issues])(https://richie1988.github.io/mobildesktop-vision/).
+Feel free to check the [issues page]([https://docs.github.com/en/issues])
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -159,7 +158,7 @@ If you like this project please feel free to reach me on social media platform a
 
 I would like to thank the Microverse Team and the founder of Microverse for the opportunity is giving the young and old developer to merg through the world of opportunity.
 Design Credit:
-----------------
+
 The design for this project was created by Cindy Shin. You can find more of her work on her website [insert website link] or on her [social media profile links, if applicable].
 
 Creative Commons License:
