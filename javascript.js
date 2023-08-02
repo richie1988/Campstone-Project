@@ -1,5 +1,4 @@
-const mobileMenu  = document.getElementById('mobile-menu')
-
+// eslint-disable-next-line no-unused-vars
 function toggleMenu() {
   const mobileMenu = document.getElementById('mobile-menu');
   if (mobileMenu.style.display === 'block') {
@@ -7,7 +6,20 @@ function toggleMenu() {
   } else {
     mobileMenu.style.display = 'block';
   }
-};
+}
+
+
+
+// const mobileMenu = document.getElementById('mobile-menu');
+// function toggleMenu() {
+//   mobileMenu.addEventListener('click',toggleMenu);
+//   if (mobileMenu.style.display === 'block') {
+//     mobileMenu.style.display = 'none';
+//   } else {
+//     mobileMenu.style.display = 'block';
+//   }
+// }
+
 
 // Array of objects representing featured speakers///////////////////
 const featuredSpeakers = [
