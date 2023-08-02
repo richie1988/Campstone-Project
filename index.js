@@ -8,7 +8,6 @@ function toggleMenu() {
   }
 }
 
-// Array of objects representing featured speakers///////////////////
 const featuredSpeakers = [
   {
     imageSrc: '../images/speaker 1.png',
@@ -49,16 +48,15 @@ const featuredSpeakers = [
 
 ];
 
-let speakersToShow = 2; // Initial number of speakers to display
+let speakersToShow = 2;
 
 function createFeaturedSpeakers() {
   const featureWrapper = document.getElementById('feature-wrapper');
-  featureWrapper.innerHTML = ''; // Clear the existing content
+  featureWrapper.innerHTML = '';
 
-  for (let i = 0; i < speakersToShow; i+=1) {
+  for (let i = 0; i < speakersToShow; i += 1) {
     const speaker = featuredSpeakers[i];
 
-    // Create the HTML elements for each speaker
     const speakerDiv = document.createElement('div');
     speakerDiv.classList.add('featured-speaker');
 
@@ -75,7 +73,6 @@ function createFeaturedSpeakers() {
     const p = document.createElement('p');
     p.textContent = speaker.description;
 
-    // Append the elements to the featured speaker div
     span.appendChild(h3);
     span.appendChild(h5);
     span.appendChild(p);
@@ -83,13 +80,11 @@ function createFeaturedSpeakers() {
     speakerDiv.appendChild(img);
     speakerDiv.appendChild(span);
 
-    // Append the speaker div to the feature wrapper
     featureWrapper.appendChild(speakerDiv);
   }
 
   const seeMoreBtn = document.querySelector('.see-moreBtn');
   if (speakersToShow >= featuredSpeakers.length) {
-    // Hide the "More" button if all speakers have been displayed
     seeMoreBtn.style.display = 'none';
   } else {
     seeMoreBtn.style.display = 'block';
@@ -97,14 +92,11 @@ function createFeaturedSpeakers() {
 }
 
 function showMoreSpeakers() {
-  // i need to increament whenevr Increment the number of speakers to show
   speakersToShow += 2;
   createFeaturedSpeakers();
 }
 
-// i need to Call the function to create featured speakers on page load
 document.addEventListener('DOMContentLoaded', createFeaturedSpeakers);
 
-// i need to to make eventListener to the button
 const seeMoreBtn = document.querySelector('.see-moreBtn');
 seeMoreBtn.addEventListener('click', showMoreSpeakers);
