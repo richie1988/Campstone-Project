@@ -92,6 +92,10 @@ main {
   text-decoration-line: underline;
 }
 
+#creative-text {
+  background-color: #fbf7f7;
+}
+
 #mobile-menu .menu-section a {
   font-family: 'lato', sans-serif;
   font-weight: 800;
@@ -138,7 +142,7 @@ main {
 .article-wrapper h1 {
   font-family: 'lato', sans-serif;
   font-weight: 300;
-  color: #ec5142;
+  color: rgb(235, 46, 28);
   font-size: 20px;
   margin: 5px 0;
 }
@@ -153,9 +157,9 @@ main {
 
 .text-area {
   font-family: lato, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  color: #570b2c;
+  font-size: 19px;
+  font-weight: 500;
+  color: #131212;
   margin-top: 30px;
   gap: 24px;
   padding-bottom: 3rem;
@@ -170,8 +174,9 @@ main {
   color: #e9eef3;
 }
 
-.main-ctontainer {
-  background-color: #282b32;
+.middle-wrapper {
+  background-color: #272a31;
+  padding-bottom: 0.5px;
 }
 
 .featured-section {
@@ -182,14 +187,34 @@ main {
   margin: 5px 16px 0;
   width: calc(100% - 32px);
   height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e9eef3;
 }
 
-.block-one h2 {
+.join-blockBtn h2 {
+  margin: auto;
+  font-family: lato, sans-serif;
+}
+
+.about-wraper h2 {
+  font-family: 'lato', Times, serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: #ec5242;
+  margin: auto;
+  width: 100%;
+  padding: 24px 0;
+  letter-spacing: 2px;
+}
+
+.link-wrapper.block-one h2 {
   font-family: lato, sans-serif;
   font-size: 28px;
   font-weight: 500;
   text-align: center;
-  color: #f9f3f2;
+  color: #f9f2f2;
   position: relative;
   padding-bottom: 10px;
 }
@@ -203,14 +228,12 @@ main {
 }
 
 .link-wrapper .block-two {
-  margin: 16px 16px 0;
-  width: calc(100% - 32px);
-  height: 100px;
+  border: 1px solid #000;
+  height: 100%;
   display: flex;
-  align-items: center;
   gap: 10px;
-  padding: 0 15px;
-  border: 1px solid #3b3e45;
+  padding: 10px;
+  margin: 4px;
 }
 
 .block-two img {
@@ -257,32 +280,16 @@ main {
   padding: 12px 15px;
 }
 
-.join-blockBtn h2 {
-  margin: auto;
-  font-family: lato, sans-serif;
-}
-
 .join-blockBtn h3 {
   display: none;
 }
 
-.about-wraper h2 {
-  font-family: 'lato', Times, serif;
-  font-size: 40px;
-  font-weight: 900;
-  color: #ec5242;
-  margin: auto;
-  width: 100%;
-  padding: 24px 0;
-  letter-spacing: 2px;
-}
-
 .featured-section .block-one h2 {
-  color: #272a31;
+  color: #2c2d30;
   font-family: Lato, sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 28px;
 }
 
@@ -320,9 +327,29 @@ main {
   letter-spacing: -0.3px;
 }
 
-footer span {
-  width: 70%;
-  height: 100%;
+.about-footer {
+  display: flex;
+  width: 100%;
+}
+
+.about-footer h4 {
+  font-size: 20px;
+  color: #272a31;
+  margin: 5px;
+}
+
+.about-footer div p {
+  font-size: 10px;
+}
+
+.about-footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-footer div h5 {
+  display: none;
 }
 
 .feature-wrapper div span {
@@ -330,25 +357,17 @@ footer span {
   padding: 15px;
 }
 
-.see-moreBtn img {
-  padding: 16px;
-}
-
 .middle-text img {
-  width: 50%;
+  width: 40%;
 }
 
 .feature-wrapper div img {
   width: 80%;
-  height: 40%;
-}
-
-footer ul h5 {
-  display: none;
+  height: 100%;
 }
 
 .feature-wrapper div h5 {
-  color: rgb(247, 140, 137);
+  color: rgb(246, 111, 111);
 }
 
 .feature-wrapper div p {
@@ -371,7 +390,7 @@ footer ul h5 {
   font-weight: 700;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   box-shadow: 0 0  20px rgb(242, 115, 115);
   border-radius: 5px;
   border: none;
@@ -385,6 +404,7 @@ footer ul h5 {
   background-repeat: no-repeat;
   background-position: 60%;
   background-size: cover;
+  opacity: 60%;
 }
 
 .first-container .middle-text p {
@@ -436,11 +456,6 @@ footer ul h5 {
   margin: 20px auto;
 }
 
-footer ul h4 {
-  font-weight: 600;
-  font-size: 30px;
-}
-
 .middle-text h4 {
   margin: 20px 12px;
   color: rgb(131, 131, 131);
@@ -490,7 +505,7 @@ footer ul h4 {
   width: calc(100% - 32px);
   background-image: url("../images/musicsummer1.jpg");
   background-repeat: no-repeat;
-  background-position: 60%;
+  background-position: 60% 90%;
   background-size: cover;
   text-align: center;
   font-family: lato, sans-serif;
@@ -499,6 +514,7 @@ footer ul h4 {
   color: #ec5242;
   font-size: 15px;
   font-weight: 700;
+  opacity: 50%;
 }
 
 .footer-wrapper {
@@ -516,30 +532,12 @@ footer ul h4 {
   background-color: #ff5438;
 }
 
-footer ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 20px;
-  background-color: #fff;
-  gap: 12px;
-  color: #272a31;
-  margin-left: 10px;
-}
-
 .footer-wrapper span ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -571,6 +569,13 @@ footer {
     display: flex;
     flex-direction: row;
     margin-right: 3rem;
+  }
+
+  #Logo-area li {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 3px;
+    padding: 1rem;
   }
 
   #mobile-menu .menu-section li {
@@ -690,7 +695,7 @@ footer {
 
   .banner-wrapper h2 {
     font-family: lato, sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 900;
     color: rgb(161, 12, 12);
     height: auto;
@@ -699,12 +704,16 @@ footer {
 
   .text-area p {
     font-family: Lato, sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 36.111px;
     letter-spacing: -0.255px;
     width: 70%;
+    background: #d3d3d3;
+    color: #272a31;
+    opacity: 80%;
+    margin: 1rem 0;
   }
 
   .block-one h2 {
@@ -714,6 +723,7 @@ footer {
     text-align: center;
     position: relative;
     padding-bottom: 10px;
+    color: white;
   }
 
   .block-one hr {
@@ -727,20 +737,24 @@ footer {
   .program-area {
     display: flex;
     flex-direction: row;
-    height: auto;
     width: 100%;
+    height: 400px;
+    justify-content: center;
+    padding: 10%;
     gap: 5px;
   }
 
   .program-area .block-two {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
+    display: block;
+    height: auto;
+    width: 70%;
     padding: 16px;
-    margin-left: 20px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .program-area .block-two:hover {
+    border: 2px solid  #d3d3d3;
   }
 
   .join-blockBtn h3 {
@@ -758,6 +772,7 @@ footer {
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
+    line-height: 3rem;
   }
 
   .program-area .block-two p {
@@ -784,31 +799,22 @@ footer {
   .middle-wrapper {
     width: 100%;
     height: 100%;
-    background-color: #3b3e45;
+    background-color: #272a31;
+    padding-bottom: 0;
   }
 
   .main-ctontainer {
-    width: 1020px;
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 30px 60px 0 30px;
-    margin: auto;
+    height: auto;
   }
 
   .link-wrapper .block-one {
-    margin: 5px 16px 0 30px;
+    margin: 5px 5% 0 20px;
     width: calc(100% - 32px);
-    height: 50px;
-    margin-bottom: 50px;
-  }
-
-  .link-wrapper .block-one h2 {
-    font-family: lato, sans-serif;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: -0.3px;
+    height: 100%;
   }
 
   .link-wrapper.block-one hr {
@@ -822,8 +828,9 @@ footer {
   .feature-wrapper {
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 20px;
+    grid-gap: 30px;
     margin: 0 50px;
+    margin-bottom: 4rem;
   }
 
   .feature-wrapper div img {
@@ -859,8 +866,13 @@ footer {
     letter-spacing: -0.48px;
   }
 
-  footer ul h5 {
+  .footer-wrapper span ul {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 40px;
   }
 
   .feature-wrapper div h5 {
@@ -917,7 +929,7 @@ footer {
   .about-wraper h2 {
     font-size: 40px;
     font-weight: 900;
-    width: 60%;
+    width: 40%;
   }
 
   .about-wraper hr {
@@ -927,13 +939,6 @@ footer {
     border: rgb(239, 30, 11);
     margin: 5px auto;
     display: block;
-  }
-
-  footer ul p {
-    padding-left: 10px;
-    font-size: 10px;
-    font-weight: 600;
-    line-height: 15px;
   }
 
   .middle-text p {
@@ -946,7 +951,8 @@ footer {
     padding: 0 20px;
     width: 70%;
     margin: auto;
-    border: 1px solid rgb(252, 246, 246);
+    background: #4e4b4b;
+    opacity: 60%;
   }
 
   .middle-text h3 {
@@ -1016,26 +1022,62 @@ footer {
     padding: 15%;
   }
 
-  .footer-wrapper {
-    margin-top: 80px;
-  }
-
   #mobile-menu {
     display: block;
   }
 
   .about-footer {
     background-color: #272a31;
-    justify-content: center;
     color: #d3d3d3;
-    margin: 3rem 0 0 0;
+    width: 100%;
+    margin-top: 50px;
+    height: 99px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-footer div {
+    align-items: center;
+    align-content: center;
+    width: 60%;
+    margin-left: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   #footer-about-first {
     display: none;
   }
 
+  footer div h5 {
+    display: block;
+  }
+
+  .about-footer h4 {
+    font-size: 20px;
+    color: #f1f3f7;
+  }
+
+  .about-footer div p {
+    font-size: 10px;
+  }
+
+  .about-footer div h5 {
+    display: block;
+  }
+
   .see-moreBtn {
     visibility: hidden;
+  }
+
+  #home-footer {
+    background-color: white;
+    color: #272a31;
+  }
+
+  #home-footer h4 {
+    color: #272a31;
   }
 }
