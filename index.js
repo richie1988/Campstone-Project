@@ -47,7 +47,6 @@ const featuredSpeakers = [
   },
 
 ];
- 
 
 let speakersToShow = 1;
 const cardsPerLoad = 1;
@@ -60,7 +59,6 @@ function createFeaturedSpeakers() {
   if (screenWidth >= 768) {
     speakersToShow = featuredSpeakers.length;
   } else {
-    
     speakersToShow = Math.min(featuredSpeakers.length, speakersToShow + cardsPerLoad);
   }
 
@@ -95,13 +93,10 @@ function createFeaturedSpeakers() {
 
   const seeMoreBtn = document.querySelector('.see-moreBtn');
   if (screenWidth >= 768) {
-
     seeMoreBtn.style.display = 'none';
   } else if (speakersToShow >= featuredSpeakers.length) {
-
     seeMoreBtn.style.display = 'none';
   } else {
-    
     seeMoreBtn.style.display = 'block';
   }
 }
@@ -112,8 +107,6 @@ function showMoreSpeakers() {
 }
 
 document.addEventListener('DOMContentLoaded', createFeaturedSpeakers);
-
 const seeMoreBtn = document.querySelector('.see-moreBtn');
 seeMoreBtn.addEventListener('click', showMoreSpeakers);
-
 window.addEventListener('resize', createFeaturedSpeakers);
